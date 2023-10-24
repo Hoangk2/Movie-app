@@ -1,0 +1,33 @@
+.footer-item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+
+  .icon {
+    padding-right: 2px;
+    color: #d0d4fc;
+    font-size: 12px;
+    line-height: 0;
+    transition: 0.3s;
+  }
+  &:hover .icon,
+  &:hover a {
+    color: var(--primary);
+    transform: translateX(4px);
+  }
+
+  &::first-child {
+    padding-top: 0;
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #606162;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+}

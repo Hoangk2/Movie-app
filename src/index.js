@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+//import Swiper styles
+import 'swiper/css';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import GlobeStyles from '~/components/GlobeStyles/GlobeStyles';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <GlobeStyles>
+      <App />
+    </GlobeStyles>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
